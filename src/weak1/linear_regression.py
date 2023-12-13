@@ -36,6 +36,7 @@ plt.title('price prediction')
 plt.ylabel('price in dollar')
 plt.xlabel('size in sq feet')
 plt.legend()
-plt.show()
+# plt.show()
+plt.savefig("src/image/squares.png")
 
 
