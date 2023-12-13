@@ -1,0 +1,2 @@
+print("linear")
+print("hello")
