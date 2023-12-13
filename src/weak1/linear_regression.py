@@ -30,10 +30,12 @@ def computeOutputModel(x, w, b):
 
 temp_f_wb = computeOutputModel(house_x_train, w, b)
 # print(temp_f_wb)
-# plt.scatter(house_x_train, house_y_train, c='r', marker="*", label="actual value")
-# plt.plot(house_x_train, temp_f_wb, c='b', label="our prediction")
-# plt.title('price prediction')
-# plt.ylabel('price in dollar')
-# plt.xlabel('size in sq feet')
-# plt.legend()
-# plt.show()
+plt.scatter(house_x_train, house_y_train, c='r', marker="*", label="actual value")
+plt.plot(house_x_train, temp_f_wb, c='b', label="our prediction")
+plt.title('price prediction')
+plt.ylabel('price in dollar')
+plt.xlabel('size in sq feet')
+plt.legend()
+plt.show()
+
+
