@@ -2,18 +2,19 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from src.utils.constant import titanic_train_x, titanic_train_y, titanic_test_x, titanic_test_y
 
-X_train = pd.read_csv("src/data/train_X.csv")
-Y_train = pd.read_csv("src/data/train_Y.csv")
+X_train = pd.read_csv(titanic_train_x)
+Y_train = pd.read_csv(titanic_train_y)
 
-X_test = pd.read_csv("src/data/test_X.csv")
-Y_test = pd.read_csv("src/data/test_Y.csv")
+X_test = pd.read_csv(titanic_test_x)
+Y_test = pd.read_csv(titanic_test_y)
 
 X_train = X_train.drop("Id", axis=1)
 Y_train = Y_train.drop("Id", axis=1)
 X_test = X_test.drop("Id", axis=1)
 Y_test = Y_test.drop("Id", axis=1)
-
+print(X_train)
 X_train = X_train.values
 Y_train = Y_train.values
 X_test = X_test.values
