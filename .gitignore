@@ -1,0 +1,13 @@
+.idea/.gitignore
+.idea/ML-Intern.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea
+.idea/sonarlint/
+src/module/__pycache__/
+src/pipeline/__pycache__/
+src/preprocessing/__pycache__/
+src/utils/__pycache__/
