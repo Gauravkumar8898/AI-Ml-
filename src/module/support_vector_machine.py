@@ -1,8 +1,9 @@
-from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
-from sklearn.model_selection import cross_val_score, GridSearchCV
+from sklearn.metrics import classification_report, accuracy_score
+from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVC
 
 
+# In this function train model on two different kernel(rbf, linear) and set cross validation
 def train_model_svm(x_train_scaled, y_train):
     params_grid = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4],
                     'C': [1, 10, 100, 1000]},
@@ -12,6 +13,7 @@ def train_model_svm(x_train_scaled, y_train):
     return svm
 
 
+# In this function we have display the accuracy,classification, best score of model
 def display_score_for_model(svm, y_test, y_prediction):
     print('Best score for training data:', svm.best_score_, "\n")
 
@@ -27,8 +29,8 @@ def display_score_for_model(svm, y_test, y_prediction):
     print(f'Classification Report:\n{report}')
 
 
+# In this function we have predicted the value on test dataset
 def prediction_svm(svm, x_test_scaled):
     model = svm.best_estimator_
     y_prediction = model.predict(x_test_scaled)
     return y_prediction
-

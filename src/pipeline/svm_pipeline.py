@@ -1,4 +1,4 @@
-from src.utils.constant import lung_cancer_dataset
+from src.utils.constant import lung_cancer_data_path
 from src.preprocessing.svm_preprocessing import (load_dataset, drop_unused_feature,
                                                  set_feature_target_variable, transform_data,
                                                  split_dataset, standardize_feature)
@@ -6,7 +6,7 @@ from src.module.support_vector_machine import train_model_svm, display_score_for
 
 
 def pipeline():
-    dataset = load_dataset(lung_cancer_dataset)
+    dataset = load_dataset(lung_cancer_data_path)
     dataset = drop_unused_feature(dataset)
     df_features, df_target = set_feature_target_variable(dataset)
     df_target = transform_data(df_target)
