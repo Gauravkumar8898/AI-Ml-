@@ -2,7 +2,9 @@ from src.utils.constant import lung_cancer_data_path
 from src.preprocessing.svm_preprocessing import (load_dataset, drop_unused_feature,
                                                  set_feature_target_variable, transform_data,
                                                  split_dataset, standardize_feature)
-from src.module.support_vector_machine import train_model_svm, display_score_for_model, prediction_svm
+from src.module.support_vector_machine import (train_model_svm, display_score_for_model,
+                                               prediction_svm)
+from src.Flask import make_pkl
 
 
 def pipeline():
@@ -15,3 +17,5 @@ def pipeline():
     svm = train_model_svm(x_train_scaled, y_train)
     y_prediction = prediction_svm(svm, x_test_scaled)
     display_score_for_model(svm, y_test, y_prediction)
+    svm = svm.best_estimator_
+    make_pkl(svm)

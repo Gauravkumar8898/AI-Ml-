@@ -11,3 +11,4 @@ src/module/__pycache__/
 src/pipeline/__pycache__/
 src/preprocessing/__pycache__/
 src/utils/__pycache__/
+src/test_suit/__pycache__/

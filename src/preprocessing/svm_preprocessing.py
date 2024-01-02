@@ -26,7 +26,8 @@ def set_feature_target_variable(dataset):
 def transform_data(df_target):
     encoder = LabelEncoder()
     df_target = encoder.fit_transform(df_target)
-    return df_target
+
+    return df_target, encoder
 
 
 # In this function we split the data into training and testing on both (features and target)
