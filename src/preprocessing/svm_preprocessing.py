@@ -27,13 +27,13 @@ def transform_data(df_target):
     encoder = LabelEncoder()
     df_target = encoder.fit_transform(df_target)
 
-    return df_target, encoder
+    return df_target
 
 
 # In this function we split the data into training and testing on both (features and target)
 def split_dataset(df_features, df_target):
-    x_train, x_test, y_train, y_test = (
-        train_test_split(df_features, df_target, random_state=91, test_size=0.2))
+    x_train, x_test, y_train, y_test = \
+        (train_test_split(df_features, df_target, random_state=91, test_size=0.2))
     return x_train, x_test, y_train, y_test
 
 

@@ -7,7 +7,7 @@ from src.pipeline.svm_pipeline import pipeline
 app = Flask(__name__)
 
 # load pickle file
-model = pickle.load(open("src/Flask/model.pkl", "rb"))
+model = pickle.load(open("/home/knoldus/PycharmProjects/AI/ML-Intern/src/Flask/model.pkl", "rb"))
 
 
 @app.route("/predict", methods=['POST'])
