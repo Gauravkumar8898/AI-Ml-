@@ -7,10 +7,10 @@
 .idea/vcs.xml
 .idea
 .idea/sonarlint/
-src/module/__pycache__/
+src/svm/__pycache__/
 src/pipeline/__pycache__/
 src/preprocessing/__pycache__/
 src/utils/__pycache__/
 src/test_suit/__pycache__/
-src/Flask/__pycache__/
+src/flask/__pycache__/
 src/__pycache__/
