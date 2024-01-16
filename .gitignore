@@ -1,0 +1,10 @@
+.idea/sonarlint/
+src/k_means/__pycache__/
+src/utils/__pycache__/
+.idea/.gitignore
+.idea/K-mean.iml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
