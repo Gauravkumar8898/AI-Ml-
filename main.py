@@ -10,4 +10,4 @@ if __name__ == '__main__':
     elif inputs == 2:
         mnist_pipeline_()
     else:
-        print("Enter  0 or 1 only")
+        print("Enter  1 or 2 only!")
