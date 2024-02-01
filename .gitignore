@@ -1,0 +1,13 @@
+.idea/sonarlint/
+src/neaural_network_model/__pycache__/
+src/pipeline/__pycache__/
+src/preprocessing/__pycache__/
+src/utils/__pycache__/
+test_suit/__pycache__/
+.idea/.gitignore
+.idea/inspectionProfiles/Project_Default.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/neaural-network.iml
+.idea/vcs.xml
