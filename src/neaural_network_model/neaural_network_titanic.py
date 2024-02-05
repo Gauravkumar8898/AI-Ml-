@@ -51,5 +51,4 @@ class TitanicModel:
         training = model.fit(x_train_scaled, y_train_scaled, epochs=100, batch_size=32, validation_split=0.2, verbose=0)
         obj.plot_tran_validation(training)
         val_acc = np.mean(training.history['val_accuracy'])
-        print("\n%s: %.2f%%" % ('val_acc', val_acc * 100))
         print(model.evaluate(x_test, y_test))

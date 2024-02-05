@@ -11,3 +11,4 @@ test_suit/__pycache__/
 .idea/modules.xml
 .idea/neaural-network.iml
 .idea/vcs.xml
+src/data/dogs_vs_cats/
